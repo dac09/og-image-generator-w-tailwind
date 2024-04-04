@@ -5,6 +5,8 @@ import App from './App'
 import { Document } from './Document'
 import OgImageMiddleware from './lib/OgImageMiddleware'
 
+import './ogStuff'
+
 interface Props {
   css: string[]
   meta?: any[]
@@ -12,11 +14,12 @@ interface Props {
 
 const getRoutesList = async () => {
   if (process.env.NODE_ENV === 'development') {
-    const {getProjectRoutes} = await import('@redwoodjs/internal/dist/routes')
+    const { getProjectRoutes } = await import('@redwoodjs/internal/dist/routes')
     return getProjectRoutes()
+  } else {
+    // @TODO what do we do in production?
   }
 }
-
 
 export const registerMiddleware = async () => {
   console.log('Register middleware called', await getRoutesList())
