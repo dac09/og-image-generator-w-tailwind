@@ -11,16 +11,17 @@
     ]
   },
   "dependencies": {
-    "@redwoodjs/auth-dbauth-web": "8.0.0-canary.400",
-    "@redwoodjs/forms": "8.0.0-canary.400",
-    "@redwoodjs/router": "8.0.0-canary.400",
-    "@redwoodjs/web": "8.0.0-canary.400",
+    "@apollo/experimental-nextjs-app-support": "0.0.0-commit-b8a73fe",
+    "@redwoodjs/auth-dbauth-web": "8.0.0-canary.428",
+    "@redwoodjs/forms": "8.0.0-canary.428",
+    "@redwoodjs/router": "8.0.0-canary.428",
+    "@redwoodjs/web": "8.0.0-canary.428",
     "humanize-string": "2.1.0",
     "react": "18.3.0-canary-a870b2d54-20240314",
     "react-dom": "18.3.0-canary-a870b2d54-20240314"
   },
   "devDependencies": {
-    "@redwoodjs/vite": "8.0.0-canary.400",
+    "@redwoodjs/vite": "8.0.0-canary.428",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
     "autoprefixer": "^10.4.19",
