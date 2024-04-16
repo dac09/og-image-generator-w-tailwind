@@ -7,7 +7,7 @@ import { useLocation } from '@redwoodjs/router'
 //   return DATA
 // }
 
-// import photo from './photo.jpg'
+import photo from './photo.jpg'
 
 export const output = ({ data }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -22,6 +22,7 @@ export const output = ({ data }) => {
             <img
               // src={'http://localhost:8910/photo.jpg'} <-- this works!
               src="/photo.jpg" // <--- this only works in debug mode
+              // src={photo}
               className="w-full rounded shadow"
               alt="blah"
             />
